@@ -62,7 +62,7 @@ const About = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <button className="flex items-center justify-center space-x-5 rounded-full bg-cyan-600 px-20 py-4 text-4xl text-white shadow-lg shadow-blue-500/50">
+            <button className="flex items-center justify-center space-x-5 rounded-full bg-cyan-600 px-20 py-4 text-4xl text-white shadow-lg shadow-blue-500/50 transition-all duration-300 ease-in-out hover:-translate-y-2">
               <span>Resume</span>
               <FiDownloadCloud />
             </button>
