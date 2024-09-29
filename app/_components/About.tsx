@@ -3,15 +3,15 @@
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import SectionHeader from "./SectionHeader";
+import { FiDownloadCloud } from "react-icons/fi";
+import SectionWrapper from "./SectionWrapper";
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
   return (
-    <div className="mx-auto w-3/4 py-20">
-      <SectionHeader title={"About"} />
-      <p className="mt-5 text-justify text-2xl antialiased">
+    <SectionWrapper id="about" title="About">
+      <p className="text-justify text-2xl antialiased">
         <span className="font-serif text-6xl">I</span> am a seasoned Senior
         Node.js Backend Developer with about 3 years of hands-on experience
         designing, building, and optimizing server-side solutions. With a
@@ -36,7 +36,7 @@ const About = () => {
             src={"/images/my-image.jpg"}
             fill
             alt={"my image"}
-            className="rounded-2xl border-[1px] border-b-8 border-cyan-600 shadow-xl shadow-cyan-600/50"
+            className="rounded-3xl border-[1px] border-b-8 border-cyan-600 shadow-xl shadow-cyan-600/50"
           />
         </motion.div>
         <div className="">
@@ -57,18 +57,19 @@ const About = () => {
             </p>
           </div>
           <motion.div
-            className="mt-10 flex items-center justify-center"
+            className="mt-40 flex items-center justify-center"
             initial={{ opacity: 0, y: 100 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <button className="w-[300px] rounded-full bg-blue-500 py-2 text-lg text-white shadow-lg shadow-blue-500/50">
-              RESUME
+            <button className="flex items-center justify-center space-x-5 rounded-full bg-cyan-600 px-20 py-4 text-4xl text-white shadow-lg shadow-blue-500/50">
+              <span>Resume</span>
+              <FiDownloadCloud />
             </button>
           </motion.div>
         </div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

@@ -1,13 +1,16 @@
 "use client";
 import { ReactTyped } from "react-typed";
+import Navbar from "./Navbar";
 import TSParticles from "./TSParticles";
 
 const Banner = () => {
   return (
     <div className="relative h-screen bg-[url('/images/banner2.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
+      <Navbar />
+
       <TSParticles />
-      <div className="absolute left-[15%] top-[30%]">
-        <p className="text-8xl font-bold text-white">Emran Ibn Shayed</p>
+      <div className="absolute left-[15%] top-[40%]">
+        <p className="text-7xl font-bold text-white">Emran Ibn Shayed</p>
         <div className="ml-1 mt-5 flex space-x-2 text-3xl text-white">
           <p>I{"'"}m a</p>
           <ReactTyped
