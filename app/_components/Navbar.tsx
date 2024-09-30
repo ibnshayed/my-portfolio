@@ -37,7 +37,7 @@ const Navbar = () => {
       transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       <div className="flex items-center justify-between rounded-full bg-black/30 shadow-xl shadow-black/30">
-        <p className="rounded-full px-12 py-4 text-4xl font-bold uppercase tracking-widest text-cyan-300">
+        <p className="rounded-full bg-gradient-to-r from-indigo-600 via-pink-600 to-purple-600 bg-clip-text px-12 py-4 text-4xl font-bold uppercase tracking-widest text-cyan-300 text-transparent">
           Ibnshayed
         </p>
         <div className="flex items-center space-x-5 pr-10 text-xl uppercase text-white">

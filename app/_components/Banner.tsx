@@ -5,7 +5,7 @@ import TSParticles from "./TSParticles";
 
 const Banner = () => {
   return (
-    <div className="relative h-screen bg-[url('/images/banner2.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
+    <div className="relative h-screen overflow-hidden bg-[url('/images/banner2.jpg')] bg-cover bg-fixed bg-center bg-no-repeat">
       <Navbar />
 
       <TSParticles />

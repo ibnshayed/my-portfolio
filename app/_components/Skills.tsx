@@ -101,7 +101,7 @@ const Skills = () => {
         },
         {
           title: "Ubuntu",
-          uri: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
+          uri: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg",
         },
       ],
     },
@@ -125,7 +125,7 @@ const Skills = () => {
   ];
 
   return (
-    <SectionWrapper id="skills" title="Skills" isBgPrimary>
+    <SectionWrapper id="skills" title="Skills">
       <div className="mt-10 grid grid-cols-2 gap-10">
         {skillsData.map((item) => (
           <SkillItems

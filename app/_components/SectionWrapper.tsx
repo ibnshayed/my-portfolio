@@ -17,9 +17,12 @@ const SectionWrapper = ({
   return (
     <div
       id={id}
-      className={cn("py-20", {
-        "bg-blue-50": isBgPrimary,
-      })}
+      className={cn(
+        "bg-gradient-to-r from-gray-900 to-black py-20 text-white",
+        {
+          "bg-blue-50": isBgPrimary,
+        },
+      )}
     >
       <div className="mx-auto w-3/4">
         <SectionHeader title={title} />
