@@ -79,14 +79,14 @@ const timelineData = [
   },
 ];
 
-const Timeline = () => {
+const ResumeSection = () => {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, {
     once: true,
     margin: "0px 0px -100px 0px",
   });
 
-  const itemVariants = (isLeft) => ({
+  const itemVariants = (isLeft: boolean) => ({
     hidden: { opacity: 0, y: 50, x: isLeft ? -100 : 100 },
     visible: { opacity: 1, y: 0, x: 0 },
   });
@@ -152,4 +152,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default ResumeSection;
