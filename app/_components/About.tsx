@@ -39,10 +39,10 @@ const About = () => {
           transition={{ duration: 0.5 }}
         >
           <Image
-            src={"/images/my-image.jpg"}
+            src={"/images/my-image-new.png"}
             fill
             alt={"my image"}
-            className="rounded-3xl border-[1px] border-b-8 border-cyan-600 shadow-xl shadow-cyan-600/50"
+            className="transform rounded-3xl border-b-8 border-cyan-500/30 bg-black/30 transition-all duration-300 ease-in-out hover:-translate-y-5 hover:rotate-2 hover:scale-105"
           />
         </motion.div>
         <div>
@@ -99,7 +99,7 @@ const About = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}
           >
-            <button className="flex items-center justify-center space-x-5 rounded-full bg-gradient-to-tr from-indigo-600 to-cyan-600 px-20 py-4 text-4xl text-white shadow-lg shadow-blue-500/50 transition-all duration-300 ease-in-out hover:-translate-y-2">
+            <button className="flex items-center justify-center space-x-5 rounded-full px-20 py-4 text-4xl text-white shadow-xl shadow-cyan-500/30 transition-all duration-300 ease-in-out hover:-translate-y-2">
               <span>Resume</span>
               <FiDownloadCloud />
             </button>

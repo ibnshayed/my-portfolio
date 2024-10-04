@@ -84,7 +84,7 @@ const SkillItems = ({ title, skills }: SkillItemsProps) => {
                 alt={skillItem.title}
                 width={80}
                 height={80}
-                className="transition-all duration-300 ease-in-out"
+                className="rounded-2xl transition-all duration-300 ease-in-out"
               />
             </motion.div>
             <motion.p

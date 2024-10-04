@@ -82,7 +82,6 @@ const timelineData = [
 const ResumeSection = () => {
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, {
-    once: true,
     margin: "0px 0px -100px 0px",
   });
 
@@ -100,7 +99,7 @@ const ResumeSection = () => {
             return (
               <motion.div
                 key={index}
-                className={`mb-10 flex w-full ${isLeft ? "justify-start" : "justify-end"}`}
+                className={`flex w-full ${isLeft ? "justify-start" : "justify-end"}`}
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={itemVariants(isLeft)}
@@ -111,13 +110,13 @@ const ResumeSection = () => {
                 }}
               >
                 {/* Wrapper for each event */}
-                <div className="relative w-1/2 p-4">
+                <div className="relative mb-5 w-1/2 p-4">
                   {/* Event Content */}
                   <div
                     className={`rounded-lg bg-gradient-to-l ${
                       event.type === "professional"
                         ? "from-gray-900 to-gray-800"
-                        : "from-purple-800 to-indigo-900"
+                        : "from-gray-900 to-indigo-800"
                     } p-6 shadow-lg transition-shadow duration-300 hover:shadow-2xl ${
                       isLeft ? "text-left" : "text-right"
                     }`}
@@ -143,6 +142,7 @@ const ResumeSection = () => {
               </motion.div>
             );
           })}
+          <div className="absolute left-1/2 z-10 h-10 w-10 -translate-x-1/2 rotate-45 transform bg-gradient-to-r from-blue-500 to-teal-500 shadow-xl"></div>
         </div>
 
         {/* Center Vertical Line */}
